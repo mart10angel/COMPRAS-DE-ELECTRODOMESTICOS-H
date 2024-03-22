@@ -58,23 +58,5 @@
         <!-- Agregado el contenedor para mensajes de error -->
       </div>
     </div>
-
-    <script>
-      document
-        .getElementById("login-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Evitar que el formulario se envíe automáticamente
-
-          var username = document.getElementById("username").value;
-          var password = document.getElementById("password").value;
-
-          if (username && password) {
-            window.location.href = "index.html";
-          } else {
-            document.getElementById("error-message").innerText =
-              "Por favor ingresa un usuario y contraseña";
-          }
-        });
-    </script>
   </body>
 </html>
